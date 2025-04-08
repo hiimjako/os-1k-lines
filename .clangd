@@ -1,0 +1,26 @@
+CompileFlags:
+  Add: 
+    - --target=riscv64-unknown-elf
+    - -march=rv64gc
+    - -mabi=lp64d
+    - -mcmodel=medany
+    - -nostdlib
+    - -ffreestanding
+    - -std=c11
+    - -O2
+    - -I.
+    - -Wall
+    - -Wextra
+
+Diagnostics:
+  ClangTidy:
+    Add: 
+      - modernize-*
+      - performance-*
+    Remove: 
+      - modernize-use-trailing-return-type
+  UnusedIncludes: Strict
+  
+Index:
+  Background: Build
+  StandardLibrary: Yes

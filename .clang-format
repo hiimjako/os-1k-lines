@@ -1,0 +1,13 @@
+BasedOnStyle: Linux
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+BreakBeforeBraces: Linux
+SpaceBeforeParens: ControlStatements
+AllowShortFunctionsOnASingleLine: None
+AlwaysBreakAfterReturnType: None
+ColumnLimit: 80
+IndentCaseLabels: false
+PointerAlignment: Right
+SpacesBeforeTrailingComments: 1
+AlignEscapedNewlines: Left
