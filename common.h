@@ -19,6 +19,9 @@ typedef uint32_t vaddr_t;
 #define va_start __builtin_va_start
 #define va_end __builtin_va_end
 #define va_arg __builtin_va_arg
+// 4KB = 4096 = 0x1000 (hexadecimal). Thus, page-aligned addresses look nicely
+// aligned in hexadecimal.
+#define PAGE_SIZE 4096
 
 void *memset(void *buf, char c, size_t n);
 void *memcpy(void *dst, const void *src, size_t n);
